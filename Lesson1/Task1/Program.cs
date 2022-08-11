@@ -17,7 +17,11 @@ if (a > b)
 {
     System.Console.WriteLine ($"Максимальное число - {a}, минимальное число - {b}");
 }
-else
+else if (a < b)
 {
     System.Console.WriteLine ($"Максимальное число - {b}, минимальное число - {a}");
+}
+else if (a == b)
+{
+    System.Console.WriteLine ($"Число {a} равно числу {b}");
 }
