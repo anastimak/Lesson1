@@ -2,10 +2,10 @@
 
 int Prompt(string message) 
 {
-    System.Console.Write(message);      //Вывод сообщения
+    System.Console.Write(message);          //Вывод сообщения
     string readValue = Console.ReadLine();  //Считывание с консоли строки
     int result = int.Parse (readValue);     //Преобразование строки в целое число
-    return result;                      //Возврат результата
+    return result;                          //Возврат результата
 }
 
 int num = Prompt ("Введите трехзначное число: "); 
@@ -17,6 +17,6 @@ if (99 < num && num < 1000)
 }
 else
 {
-    System.Console.WriteLine ($"Число не трехзначное");
+    System.Console.WriteLine ($"Это число не трехзначное");
 }
 
