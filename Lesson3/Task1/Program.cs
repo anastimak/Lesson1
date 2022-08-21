@@ -15,16 +15,16 @@ void Pallindrom (int num)
 {
     if (num < 100000 && num > 9999)
     {
-        if (num / 10000 != num % 10)
-        {
-            System.Console.WriteLine("Число не является палиндромом");
-        }
-        else
+        if (num / 10000 == num % 10)
         {
             if (num / 1000 - (num / 10000 * 10) == num / 10 % 10)
             {
                 System.Console.WriteLine("Число является палиндромом");
             }
+        }
+        else
+        {
+            System.Console.WriteLine("Число не является палиндромом");
         }
     }
     else
