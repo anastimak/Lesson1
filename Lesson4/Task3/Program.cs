@@ -2,3 +2,10 @@
 // И ищет второй максимум (элемент меньше максимального, но больше всех остальных)
 // 1, 2, 5, 7, 19, 6, 1, 33 -> [1, 2, 5, 7, 19, 6, 1, 33], 19
 
+int Prompt(string message) 
+{
+    System.Console.Write(message);      //Вывод сообщения
+    string value = Console.ReadLine();  //Считывание с консоли строки
+    int result = int.Parse (value);     //Преобразование строки в целое число
+    return result;                      //Возврат результата
+}
