@@ -10,3 +10,18 @@ int Prompt(string message)
     int result = int.Parse (value);     //Преобразование строки в целое число
     return result;                      //Возврат результата
 }
+
+int a = Prompt ("Введите число: ");
+
+int sumNumbers (int a)
+{
+    int sum = 0;
+    while (a > 0)
+    {
+        sum = sum + a % 10;
+        a = a / 10;
+    }
+    return sum;
+}
+
+System.Console.WriteLine ($"Сумма цифр числа {a} равна {sumNumbers(a)}");
