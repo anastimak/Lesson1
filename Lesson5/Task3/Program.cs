@@ -14,7 +14,7 @@ void generaitArray (double [] array)       //Генерация массива
 {
     for (int i = 0; i < array.Length; i++)
     {
-        array [i] = new Random().Next(0, 100);
+        array [i] = new Random().NextDouble();
     }
 }
 
@@ -52,10 +52,10 @@ double findMin (double [] array)          //Поиск минимального 
     return min;
 }
 
-double [] array = new double [5];
+double [] array = new double [4];
 generaitArray (array);
 printArray (array);
-System.Console.Write ("");
+System.Console.WriteLine ("");
 findMax (array);
 findMin (array);
-System.Console.WriteLine ($"Максимальный элемент: {findMax(array)}, минимальный: {findMin(array)}, разница между ними равна: {findMax (array) - findMin(array)} ");
+System.Console.WriteLine ($"Максимальный: {findMax(array)}, минимальный: {findMin(array)}, разница между ними равна: {findMax (array) - findMin(array)} ");
